@@ -17,5 +17,17 @@ public class AnnotationServerApplication {
 
         SpringApplication springApplication = new SpringApplication(AnnotationServerApplication.class);
         ApplicationContext applicationContext = springApplication.run(args);
+
+
+        AnnotationServiceImpl annotationService = applicationContext.getBean(AnnotationServiceImpl.class);
+
+        String result = annotationService.sayAnnotation("annotation");
+        System.out.println("invoke result:" + result);
+
+        if ("annotation".equalsIgnoreCase(result)) {
+            System.out.println("annotation invoke success");
+        } else {
+            System.out.println("annotation invoke fail");
+        }
     }
 }
