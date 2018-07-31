@@ -16,13 +16,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <boot.version>1.0.0-SNAPSHOT</boot.version>
-        <sofa.version>2.4.3</sofa.version>
+        <sofa.version>2.4.0</sofa.version>
     </properties>
 
     <parent>
         <groupId>com.alipay.sofa</groupId>
         <artifactId>sofaboot-dependencies</artifactId>
-        <version>2.4.3</version>
+        <version>2.4.0</version>
     </parent>
 
     <dependencyManagement>

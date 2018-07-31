@@ -18,7 +18,6 @@ public class AnnotationServerApplication {
         SpringApplication springApplication = new SpringApplication(AnnotationServerApplication.class);
         ApplicationContext applicationContext = springApplication.run(args);
 
-
         AnnotationServiceImpl annotationService = applicationContext.getBean(AnnotationServiceImpl.class);
 
         String result = annotationService.sayAnnotation("annotation");
